@@ -1,0 +1,25 @@
+.donate-container {
+	display: flex;
+	height: 747px;
+	margin-top: 160px;
+	margin-bottom: 160px;
+	color: #000;
+	justify-content: space-between;
+}
+
+.donate-container > img {
+	width: 50%;
+	height: 100%;
+}
+
+.donation-form {
+	margin-left: 99px;
+}
+
+.donation-form > h3 {
+	font-size: 64px;
+	width: 100%;
+	font-family: "Exo 2", sans-serif;
+	margin-top: 0px;
+	padding-top: 62px;
+}

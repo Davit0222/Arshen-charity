@@ -1,0 +1,125 @@
+.header {
+	width: 100%;
+	padding-top: 32px;
+	position: absolute;
+	z-index: 10;
+}
+
+.header-content {
+	background-color: #333333;
+	border-radius: 6px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	border: 1px solid black;
+	border-style: inset;
+	height: 75px;
+}
+
+.donate {
+	display: flex;
+	align-items: center;
+}
+
+.contact-btn {
+	margin-left: 16px;
+}
+
+.menu-toggle-btn {
+	background: none;
+	border: none;
+	font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		border-radius: 0px;
+		padding-top: 16px;
+	}
+
+	.header-content {
+		padding: 8px 12px;
+		height: 60px;
+	}
+
+	.donate {
+		gap: 12px;
+	}
+
+	.contact-btn {
+		margin-left: 8px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		position: relative;
+		padding-top: 0px;
+	}
+	.header > .container {
+		padding: 0px;
+	}
+	.header-content {
+		gap: 16px;
+		padding: 16px;
+		text-align: center;
+		border-radius: 0px;
+		height: 65px;
+	}
+
+	.donate {
+		width: 200px;
+	}
+
+	.donate button {
+		font-size: 14px;
+		width: 130px;
+	}
+
+	.contact-btn {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.header {
+		padding: 0px;
+		margin: 0px;
+	}
+	.header-content {
+		padding: 12px;
+		gap: 12px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.donate button {
+		font-size: 14px;
+		padding: 10px;
+		width: 110px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 0px;
+		margin: 0px;
+	}
+	.header-content {
+		padding: 12px;
+		gap: 12px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.header-content > img {
+		width: 40px;
+		height: 40px;
+	}
+	.donate button {
+		font-size: 10px;
+		padding: 10px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

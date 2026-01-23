@@ -1,0 +1,238 @@
+.genre-wrapper {
+	width: 100%;
+	display: flex;
+	margin-top: -150px;
+	justify-content: center;
+}
+.genre-wrapper > .container {
+	margin: 0px;
+	max-width: 100%;
+}
+.group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	padding: 5px;
+}
+
+.group::-webkit-scrollbar {
+	display: none;
+}
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 326px;
+	height: 239px;
+	border-radius: 16px;
+	color: black;
+	font-weight: 600;
+	font-size: medium;
+	background-color: #f0f0f0;
+	transition: transform 0.3s ease;
+	z-index: 2;
+}
+.sec1 {
+	border-bottom: 6px solid #feda38;
+}
+
+.sec2 {
+	border-bottom: 6px solid #26bbec;
+}
+
+.sec3 {
+	border-bottom: 6px solid #83d816;
+}
+
+.sec4 {
+	border-bottom: 6px solid red;
+}
+.sec1:hover {
+	transform: scale(1.1);
+}
+.sec2:hover {
+	transform: scale(1.1);
+
+	transition: transform 0.3s ease;
+}
+.sec3:hover {
+	transform: scale(1.1);
+}
+.sec4:hover {
+	transform: scale(1.1);
+}
+.genre > img {
+	width: 72px;
+	height: 72px;
+}
+
+.FaHandHoldingMedical {
+	width: 72px;
+	height: 72px;
+	color: rgb(38 187 236);
+}
+
+@media screen and (max-width: 1280px) {
+	.sec1,
+	.sec2,
+	.sec3,
+	.sec4 {
+		width: 280px;
+		height: 200px;
+	}
+	.group {
+		gap: 1;
+	}
+	.blog-title > h3 {
+		width: 100%;
+		font-size: 36px;
+	}
+
+	.cart-blog {
+		gap: 10px;
+	}
+
+	.cart-blog-item > img {
+		width: 100%;
+	}
+
+	.genre-wrapper {
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.sec1,
+	.sec2,
+	.sec3,
+	.sec4 {
+		width: 280px;
+		height: 190px;
+	}
+
+	.blog-title > h3 {
+		width: 100%;
+		font-size: 36px;
+	}
+
+	.cart-blog {
+		gap: 16px;
+	}
+
+	.cart-blog-item > img {
+		width: 100%;
+	}
+	.genre-track {
+		overflow: auto;
+	}
+}
+@media screen and (max-width: 960px) {
+	.container {
+		max-width: 100%;
+	}
+	.genre-track {
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.genre-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.group {
+		gap: 1em;
+	}
+	.genre-track {
+		z-index: 2;
+	}
+	.FaHandHoldingMedical {
+		width: 30px;
+		height: 30px;
+		padding-right: 10px;
+	}
+	.genre-img1,
+	.genre-img2,
+	.genre-img3 {
+		width: 30px;
+		height: 30px;
+		padding-right: 10px;
+	}
+	.sec1,
+	.sec2,
+	.sec3,
+	.sec4 {
+		height: 150px;
+
+		font-size: 14px;
+		flex-direction: row;
+		padding: 5px;
+	}
+
+	/* Disable hover scale on mobile */
+	.sec1:hover,
+	.sec2:hover,
+	.sec3:hover,
+	.sec4:hover {
+		transform: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.genre-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.genre-wrapper > .container {
+		max-width: 70%;
+	}
+	.group {
+		flex-direction: column;
+	}
+	.genre-track {
+		z-index: 2;
+	}
+	.FaHandHoldingMedical {
+		width: 60px;
+		height: 60px;
+		padding-right: 10px;
+	}
+	.genre-img1,
+	.genre-img2,
+	.genre-img3 {
+		width: 60px;
+		height: 60px;
+		padding-right: 10px;
+	}
+	.sec1,
+	.sec2,
+	.sec3,
+	.sec4 {
+		height: 150px;
+		font-size: 16px;
+		flex-direction: row;
+		padding: 5px;
+	}
+
+	.sec1:hover,
+	.sec2:hover,
+	.sec3:hover,
+	.sec4:hover {
+		transform: none;
+	}
+}
+@keyframes scroll {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}

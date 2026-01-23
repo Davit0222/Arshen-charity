@@ -1,0 +1,33 @@
+.genre-wrapper {
+	height: 350px;
+}
+.genre {
+	width: 1000px;
+	height: 239px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+	width: 326px;
+	height: 239px;
+	background-color: #fff;
+	color: #000000;
+	margin: 0px auto;
+	border-bottom: px solid red;
+	border-radius: 6px;
+}
+
+.genre > p {
+	text-align: center;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}

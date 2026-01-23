@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #f5f5dc;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+* {
+	box-sizing: border-box;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+	font-family: "Poppins", sans-serif;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+.g-recaptcha {
+	color: green;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+}
+
+.section-title {
+	font-size: 64px;
+	font-weight: 600;
+}
+.section-desc {
+	font-size: 20px;
+}
+.text-center {
+	text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+	.section-title {
+		font-size: 32px;
+	}
+	.section-desc {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.section-title {
+		font-size: 26px;
+	}
+	.section-desc {
+		font-size: 16px;
+	}
+}
+
+@keyframes siteFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#root {
+	animation: siteFadeIn 1.5s ease-in-out forwards;
+}
