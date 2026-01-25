@@ -20,6 +20,7 @@
 .donate {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .contact-btn {
@@ -30,6 +31,7 @@
 	background: none;
 	border: none;
 	font-size: 28px;
+	color: #ffffff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -71,11 +73,6 @@
 		width: 200px;
 	}
 
-	.donate button {
-		font-size: 14px;
-		width: 130px;
-	}
-
 	.contact-btn {
 		margin-left: 0;
 	}
@@ -90,12 +87,6 @@
 		gap: 12px;
 		display: flex;
 		flex-direction: row;
-	}
-
-	.donate button {
-		font-size: 14px;
-		padding: 10px;
-		width: 110px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -113,13 +104,5 @@
 	.header-content > img {
 		width: 40px;
 		height: 40px;
-	}
-	.donate button {
-		font-size: 10px;
-		padding: 10px;
-		height: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }

@@ -65,13 +65,13 @@ function About() {
 							law.
 						</li>
 					</ul>
+					<h3>Our Address</h3>
 				</div>
 			</motion.div>
-			<h3>Our Address</h3>
 			<div className="contact-map">
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.18014409264333!2d44.694461906805564!3d39.854487395860154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401530ef508face7%3A0xd9a7117e9e0c5177!2sNoyan%20Tapan%20church!5e0!3m2!1sen!2sam!4v1763582148393!5m2!1sen!2sam"
-					title="Noyan Tapan"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d382.86036019997596!2d44.69444533111143!3d39.854457609130826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sam!4v1769265214346!5m2!1sen!2sam"
+					title="Noyan Tapan Location"
 					style={{ border: 0 }}
 					allowFullScreen=""
 					loading="lazy"

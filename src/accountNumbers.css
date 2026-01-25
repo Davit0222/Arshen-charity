@@ -153,6 +153,7 @@
 	}
 
 	.bank-number-cell::before {
+		content: attr(data-label);
 		font-weight: 700;
 		color: #666;
 		margin-right: 10px;
@@ -170,7 +171,7 @@
 		justify-content: center;
 		background: transparent;
 		border: none;
-		height: 50vh;
+		height: 60vh;
 	}
 
 	.bank-number-header {
@@ -199,15 +200,18 @@
 	.bank-number-cell {
 		display: flex;
 		justify-content: flex-start;
+		align-items: center;
 		padding: 12px 15px;
 		border-bottom: 1px solid #eee;
 		min-height: 36px;
 	}
 
 	.bank-number-cell::before {
+		content: attr(data-label);
 		font-weight: 700;
 		color: #666;
 		margin-right: 10px;
+		min-width: 50px;
 	}
 
 	.copy-btn {
@@ -225,7 +229,7 @@
 
 	.close-btn {
 		top: 15px;
-		right: -20px;
+		right: 15px;
 	}
 
 	.close {
@@ -251,6 +255,7 @@
 	.bank-number-table {
 		display: flex;
 		flex-direction: column;
+		height: 45vh;
 	}
 	.bank-number-cell {
 		display: flex;
@@ -260,6 +265,14 @@
 		min-height: 35px;
 		font-size: 12px;
 		height: 35px;
+		margin-left: 10px;
+	}
+	.bank-number-cell::before {
+		content: attr(data-label);
+		font-weight: 700;
+		color: #666;
+		margin-right: 10px;
+		min-width: 35px;
 	}
 	.bank-number-row {
 		overflow: visible;
@@ -280,7 +293,7 @@
 
 	.close-btn {
 		top: 15px;
-		right: -20px;
+		right: 15px;
 	}
 	.close {
 		width: 20px;

@@ -104,11 +104,11 @@
 		flex-direction: column;
 	}
 	.left {
-		font-size: 12px;
+		font-size: 14px;
 		width: 100%;
 	}
 	.right {
-		font-size: 12px;
+		font-size: 14px;
 		width: 100%;
 	}
 	.stats-btn {

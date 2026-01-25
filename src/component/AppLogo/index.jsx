@@ -3,12 +3,16 @@ import img from "../../assets/logo.jpeg";
 
 export default function AppLogo({ className }) {
 	return (
-		<img
-			src={img}
-			alt="pic"
-			width={65}
-			height={65}
-			className={`${styles.logo}${className || ""}`}
-		/>
+		<div className="logo">
+			<a href="/" rel="noopener noreferrer" alt="go to out home page">
+				<img
+					src={img}
+					alt="logo"
+					width={65}
+					height={65}
+					className={`${styles.logo} ${className || ""}`}
+				/>
+			</a>
+		</div>
 	);
 }

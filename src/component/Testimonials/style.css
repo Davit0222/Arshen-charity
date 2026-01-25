@@ -69,6 +69,7 @@
 	}
 	.testimonial-item .testimonial-text {
 		height: auto;
+		font-size: 18px;
 	}
 	.testimonial-item > div {
 		width: 100%;

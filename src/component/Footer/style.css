@@ -1,6 +1,10 @@
 .footer {
 	background-color: #333333;
 }
+.footer-top > .footer-logo {
+	border-radius: 50%;
+}
+
 .footer-section {
 	display: flex;
 	flex-direction: column;

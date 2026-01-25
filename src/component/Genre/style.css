@@ -145,7 +145,10 @@
 		align-items: center;
 		justify-content: center;
 	}
-
+	.container {
+		width: 100%;
+		max-width: 100%;
+	}
 	.group {
 		gap: 1em;
 	}
@@ -169,7 +172,7 @@
 	.sec3,
 	.sec4 {
 		height: 150px;
-
+		width: 100%;
 		font-size: 14px;
 		flex-direction: row;
 		padding: 5px;
@@ -190,7 +193,7 @@
 		justify-content: center;
 	}
 	.genre-wrapper > .container {
-		max-width: 70%;
+		max-width: 100%;
 	}
 	.group {
 		flex-direction: column;

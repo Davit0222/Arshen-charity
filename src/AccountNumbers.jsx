@@ -1,25 +1,12 @@
 import "./accountNumbers.css";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
+import { bankAccounts } from "./data/bankAccount";
 
 export default function AccountPopup({ onClose }) {
 	const [copiedId, setCopiedId] = useState(null);
-	const accounts = [
-		{
-			bank: "Inecobank",
-			USD: import.meta.env.VITE_INECO_USD,
-			EUR: import.meta.env.VITE_INECO_EUR,
-			RUB: import.meta.env.VITE_INECO_RUB,
-			AMD: import.meta.env.VITE_INECO_AMD,
-		},
-		{
-			bank: "Swift Code",
-			USD: import.meta.env.VITE_SWIFT_USD,
-			EUR: import.meta.env.VITE_SWIFT_EUR,
-			RUB: "-",
-			AMD: "-",
-		},
-	];
+	const accounts = bankAccounts;
+
 	const handleCopy = (text, id) => {
 		if (!text || text === "-") return;
 
@@ -31,10 +18,10 @@ export default function AccountPopup({ onClose }) {
 	return (
 		<div className="overlay">
 			<div className="popup">
+				<h2>Bank Account Numbers</h2>
 				<button type="button" className="close-btn" onClick={onClose}>
 					<IoCloseSharp className="close" />
 				</button>
-				<h2>Bank Account Numbers</h2>
 
 				<div className="bank-number-table">
 					<div className="bank-number-header">Bank</div>
@@ -48,11 +35,15 @@ export default function AccountPopup({ onClose }) {
 							<div className="bank-name">{acc.bank}</div>
 
 							{["USD", "EUR", "RUB", "AMD"].map((currency) => {
-								const val = acc[currency];
+								const val = acc.accounts[currency];
 								const id = `${rowIndex}-${currency}`;
 								const isAvailable = val && val !== "-";
 								return (
-									<div key={id} className="bank-number-cell">
+									<div
+										key={id}
+										className="bank-number-cell"
+										data-label={currency}
+									>
 										{isAvailable ? (
 											<button
 												type="button"
