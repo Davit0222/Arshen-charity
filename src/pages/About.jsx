@@ -70,7 +70,7 @@ function About() {
 			</motion.div>
 			<div className="contact-map">
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d382.86036019997596!2d44.69444533111143!3d39.854457609130826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sam!4v1769265214346!5m2!1sen!2sam"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1042.3926985233793!2d44.693735137922474!3d39.854072609310194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sam!4v1770053264335!5m2!1sen!2sam"
 					title="Noyan Tapan Location"
 					style={{ border: 0 }}
 					allowFullScreen=""

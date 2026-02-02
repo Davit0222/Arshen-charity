@@ -7,6 +7,7 @@ import Header from "./component/Header";
 import BlogSection from "./component/BlogSection";
 import { motion } from "framer-motion";
 import "./App.css";
+import PageTracker from "./component/PageTracker";
 
 const About = React.lazy(() => import("./pages/About"));
 const Contact = React.lazy(() => import("./pages/Contact"));
@@ -18,6 +19,7 @@ function App() {
 			transition={{ duration: 1.5, ease: "easeOut" }}
 		>
 			<Router>
+				<PageTracker />
 				<Header />
 				<main className="main">
 					<Suspense fallback={<div>Loading...</div>}>

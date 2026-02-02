@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./style.css";
-import img1 from "../../assets/Blog1.png";
+import img1 from "../../assets/Blog.jpg";
 import img2 from "../../assets/Blog2.png";
 import img3 from "../../assets/Blog3.png";
 

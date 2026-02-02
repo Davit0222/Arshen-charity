@@ -39,6 +39,9 @@
 	object-position: top;
 	flex: none;
 }
+.comunity-person > .comunity-person-img {
+	object-position: center;
+}
 .comunity-name > h3 {
 	text-align: left;
 	font-size: 16px;

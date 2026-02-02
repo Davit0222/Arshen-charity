@@ -5,6 +5,8 @@ import img4 from "../../comunity/4.jpg";
 import img5 from "../../comunity/5.jpg";
 import img6 from "../../comunity/ar.jpg";
 import img7 from "../../comunity/2026-01-14 18.34.23.jpg";
+import img8 from "../../comunity/comunity8.jpeg";
+
 import Container from "../Container";
 import "./style.css";
 
@@ -115,6 +117,25 @@ function ComunitySection() {
 								<img src={img7} width={100} height={100} alt="img7" />
 								<div className="comunity-name">
 									<h3>Smbat Shahnazaryan</h3>
+									<p>Council Member</p>
+								</div>
+							</div>
+						</div>
+						<div className="comunity-item">
+							<p>
+								Care unites hearts, love strengthens the essence, and heals the
+								soul.
+							</p>
+							<div className="comunity-person">
+								<img
+									className="comunity-person-img"
+									src={img8}
+									width={100}
+									height={100}
+									alt="img8"
+								/>
+								<div className="comunity-name">
+									<h3>Poghos Mrjumyan</h3>
 									<p>Council Member</p>
 								</div>
 							</div>

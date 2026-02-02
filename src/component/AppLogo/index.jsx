@@ -1,10 +1,10 @@
 import styles from "./styles.module.css";
-import img from "../../assets/logo.jpeg";
+import img from "../../assets/logo.jpg";
 
 export default function AppLogo({ className }) {
 	return (
 		<div className="logo">
-			<a href="/" rel="noopener noreferrer" alt="go to out home page">
+			<a href="/" rel="noopener noreferrer" alt="logo">
 				<img
 					src={img}
 					alt="logo"

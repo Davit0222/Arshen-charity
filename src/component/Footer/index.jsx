@@ -38,7 +38,7 @@ function Footer() {
 					<div className="social">
 						<div className="footer-bottom">
 							<a
-								href="/"
+								href="https://www.facebook.com/share/16TBpiJ1AY/?mibextid=wwXIfr"
 								rel="noopener noreferrer"
 								alt="go to out facebook page"
 							>

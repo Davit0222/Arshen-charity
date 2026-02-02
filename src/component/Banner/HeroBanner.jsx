@@ -21,7 +21,7 @@ function HeroBanner() {
 					src={imgHeader}
 					fetchPriority="high"
 					loading="eager"
-					alt="header-logo"
+					alt="Arshen Charity Foundation"
 					width={700}
 					height={851}
 				/>

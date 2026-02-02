@@ -1,5 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+	font-display: swap;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/poppins-v24-latin-regular.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Exo";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/exo-v25-latin-regular.woff2") format("woff2");
+}
 
+@font-face {
+	font-display: swap;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/exo-2-v26-latin-regular.woff2") format("woff2");
+}
 :root {
 	font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -43,6 +63,7 @@ img {
 }
 
 .section-title {
+	font-family: "Exo 2", sans-serif;
 	font-size: 64px;
 	font-weight: 600;
 }
@@ -53,6 +74,9 @@ img {
 	text-align: center;
 }
 
+a {
+	font-family: "Exo", sans-serif;
+}
 @media screen and (max-width: 1280px) {
 	.section-title {
 		font-size: 32px;
@@ -78,8 +102,4 @@ img {
 	to {
 		opacity: 1;
 	}
-}
-
-#root {
-	animation: siteFadeIn 1.5s ease-in-out forwards;
 }
