@@ -9,7 +9,7 @@ export default defineConfig({
   preview: {
     headers: {
       "Content-Security-Policy":
-        "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com; font-src 'self' data: https://*.gstatic.com; img-src 'self' data: https://*.googleapis.com https://*.gstatic.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.googleapis.com; frame-src 'self' https://www.google.com https://*.google.com https://www.youtube.com https://*.youtube.com;",
+        "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com; font-src 'self' data: https://*.gstatic.com; img-src 'self' data: blob: https://www.googletagmanager.com https://*.googleapis.com https://*.gstatic.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.googleapis.com; frame-src 'self' https://www.google.com https://*.google.com https://www.youtube.com https://*.youtube.com;",
     },
   },
 

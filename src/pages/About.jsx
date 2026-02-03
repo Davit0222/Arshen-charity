@@ -65,12 +65,12 @@ function About() {
 							law.
 						</li>
 					</ul>
-					<h3>Our Address</h3>
+					<h3>Our Address 51 Shahumyan Street, Ararat </h3>
 				</div>
 			</motion.div>
 			<div className="contact-map">
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1042.3926985233793!2d44.693735137922474!3d39.854072609310194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sam!4v1770053264335!5m2!1sen!2sam"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d583.5825407559721!2d44.694939952668626!3d39.85456629479577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401530ef508face7%3A0xd9a7117e9e0c5177!2sNoyan%20Tapan%20church!5e0!3m2!1sen!2sam!4v1770127712213!5m2!1sen!2sam"
 					title="Noyan Tapan Location"
 					style={{ border: 0 }}
 					allowFullScreen=""
