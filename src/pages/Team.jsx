@@ -5,7 +5,7 @@ import Footer from "../component/Footer";
 function Team() {
 	useEffect(() => {
 		document.title = "Team";
-	});
+	}, []);
 	return (
 		<>
 			<HeroBanner />

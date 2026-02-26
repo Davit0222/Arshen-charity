@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Team from "./pages/Team";
 import Header from "./component/Header";
 import BlogSection from "./component/BlogSection";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import "./App.css";
 import PageTracker from "./component/PageTracker";
 

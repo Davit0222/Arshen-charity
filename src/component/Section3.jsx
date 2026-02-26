@@ -14,20 +14,41 @@ function Section3() {
 			</div>
 			<div className="sec3-images">
 				<div className="img1">
-					<img src={img1} alt="sdfva" width={400} height={406} />
+					<img
+						src={img1}
+						alt="Charity quote card"
+						width={400}
+						height={406}
+						loading="lazy"
+						decoding="async"
+					/>
 					<p>
 						“The smallest act of kindness is worth more than the grandest
 						intention. Let your actions speak volumes for need”
 					</p>
 
-					<img src={img2} alt="sdfva" width={400} height={406} />
+					<img
+						src={img2}
+						alt="Hopeful community image"
+						width={400}
+						height={406}
+						loading="lazy"
+						decoding="async"
+					/>
 				</div>
 				<div className="img2">
 					<p>
 						“In the tapestry of life, every thread of charity adds beauty and
 						strength. Together, we weave a brighter tomorrow.”
 					</p>
-					<img src={img3} alt="sdfva" width={400} height={406} />
+					<img
+						src={img3}
+						alt="Helping hands illustration"
+						width={400}
+						height={406}
+						loading="lazy"
+						decoding="async"
+					/>
 					<p>
 						“Charity is the pure love of the heart, the selfless expression of
 						empathy that binds us all as one human family.”

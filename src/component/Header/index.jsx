@@ -43,6 +43,9 @@ export default function Header() {
 						type="button"
 						className="menu-toggle-btn"
 						onClick={toggleMenu}
+						aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+						aria-expanded={isMenuOpen}
+						aria-controls="primary-nav"
 					>
 						{!isMenuOpen ? <CiMenuBurger /> : <CiMenuFries />}
 					</button>

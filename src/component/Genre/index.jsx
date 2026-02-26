@@ -19,7 +19,9 @@ function Genre() {
 								width={72}
 								height={72}
 								className="genre-img1"
-								alt="img1"
+								loading="lazy"
+								decoding="async"
+								alt="Healthy food icon"
 							/>
 							<p>Healthy Food</p>
 							<div className="sec-div" />
@@ -30,7 +32,9 @@ function Genre() {
 								width={72}
 								height={72}
 								className="genre-img2"
-								alt="img2"
+								loading="lazy"
+								decoding="async"
+								alt="Clean water icon"
 							/>
 							<p>Clean Water</p>
 							<div className="sec-div" />
@@ -41,7 +45,9 @@ function Genre() {
 								width={72}
 								height={72}
 								className="genre-img3"
-								alt="img3"
+								loading="lazy"
+								decoding="async"
+								alt="Education icon"
 							/>
 							<p>Education</p>
 							<div className="sec-div" />

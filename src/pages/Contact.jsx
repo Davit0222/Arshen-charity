@@ -1,5 +1,4 @@
 import "./contact.css";
-import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Form from "../component/Form";
 import React from "react";
@@ -9,7 +8,7 @@ const access_key = import.meta.env.VITE_WEB3FORMS_KEY;
 function Contact() {
 	useEffect(() => {
 		document.title = "Contact";
-	});
+	}, []);
 	const [status, setStatus] = React.useState("");
 	const [loading, setLoading] = React.useState(false);
 
@@ -18,6 +17,11 @@ function Contact() {
 
 		const email = event.target.email.value;
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		const honeypot = event.target.company.value;
+
+		if (honeypot) {
+			return;
+		}
 
 		if (!emailRegex.test(email)) {
 			setStatus("❌ Please enter a valid email address");
@@ -29,9 +33,6 @@ function Contact() {
 
 		const formData = new FormData(event.target);
 		formData.append("access_key", access_key);
-		if (event.target.company.value) {
-			return;
-		}
 
 		try {
 			const response = await fetch("https://api.web3forms.com/submit", {
@@ -48,7 +49,7 @@ function Contact() {
 				setStatus("❌ Something went wrong");
 			}
 		} catch (error) {
-			setStatus("❌ Network error");
+			setStatus("❌ Network error", error);
 		} finally {
 			setLoading(false);
 		}

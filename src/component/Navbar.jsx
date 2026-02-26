@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar({ isOpen, toggleMenu }) {
   return (
-    <nav className={`header-navbar ${isOpen ? "open" : ""}`}>
+    <nav id="primary-nav" className={`header-navbar ${isOpen ? "open" : ""}`}>
       <Link to="/" onClick={toggleMenu}>
         Home
       </Link>

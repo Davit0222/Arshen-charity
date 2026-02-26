@@ -7,7 +7,14 @@ function DonateSection() {
 		<div className="donateSection">
 			<Container>
 				<div className="donate-container">
-					<img src={img} width={100} height={100} alt="donate" />
+					<img
+						src={img}
+						width={100}
+						height={100}
+						loading="lazy"
+						decoding="async"
+						alt="Donate icon"
+					/>
 					<div className="donation-form">
 						<h3>Donate Now!</h3>
 						<Form />

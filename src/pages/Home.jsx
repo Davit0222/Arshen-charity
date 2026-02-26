@@ -10,7 +10,7 @@ import { useEffect } from "react";
 function Home() {
 	useEffect(() => {
 		document.title = "Arshen.net";
-	});
+	}, []);
 	return (
 		<>
 			<HeroBanner />

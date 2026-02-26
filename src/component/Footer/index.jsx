@@ -19,7 +19,7 @@ function Footer() {
 								<div className="info-icon">
 									{" "}
 									<MdAddIcCall />
-									<a href="tel:+374 55 222023" rel="noopener noreferrer">
+									<a href="tel:+37455222023" rel="noopener noreferrer">
 										+374 55 222023
 									</a>
 								</div>
@@ -28,7 +28,7 @@ function Footer() {
 									{" "}
 									<LuMessageSquareMore />
 									<a href="mailto:arshen@arshen.am" rel="noopener noreferrer">
-										arshen@arshen.am
+										arshenararat@gmail.com{" "}
 									</a>
 								</div>
 							</div>
@@ -39,8 +39,9 @@ function Footer() {
 						<div className="footer-bottom">
 							<a
 								href="https://www.facebook.com/share/16TBpiJ1AY/?mibextid=wwXIfr"
+								target="_blank"
 								rel="noopener noreferrer"
-								alt="go to out facebook page"
+								aria-label="Arshen Facebook"
 							>
 								<FaFacebook
 									className="footer-botom-facebook"
@@ -51,8 +52,9 @@ function Footer() {
 						<div className="footer-bottom">
 							<a
 								href="https://www.instagram.com/arshen_charitable_organisation/?next=%2F"
+								target="_blank"
 								rel="noopener noreferrer"
-								alt="go to out instagram page"
+								aria-label="Arshen Instagram"
 							>
 								<BsInstagram
 									className="footer-botom-instagram"
@@ -62,9 +64,10 @@ function Footer() {
 						</div>
 						<div className="footer-bottom">
 							<a
-								href="/"
-								alt="go to out youtube page"
+								href="https://www.youtube.com"
+								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Arshen YouTube"
 							>
 								<IoLogoYoutube
 									className="footer-botom-youtube"

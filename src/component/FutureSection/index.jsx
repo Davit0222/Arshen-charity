@@ -24,37 +24,58 @@ function FutureSection() {
 						</div>
 						<div className="future-section">
 							<div className="cart">
-								<img src={img1} width={100} height={100} alt="img3" />
+								<img
+									src={img1}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Access to education icon"
+								/>
 								<h2>Access to Education</h2>
 								<p>
 									Education is the key to a brighter future. Help provide school
 									supplies and tuition fees for orphaned children to attend
 									school.
 								</p>
-								<a href="/more" rel="noopener noreferrer">
+								<a href="/about">
 									Read More{" "}
 								</a>
 							</div>
 							<div className="cart">
-								<img src={img2} width={100} height={100} alt="img2" />
+								<img
+									src={img2}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Safe shelter icon"
+								/>
 								<h2>Provide Safe Shelter</h2>
 								<p>
 									Thousands of orphaned children are in need of a safe and
 									secure place to live. Help build homes for those without
 									families.
 								</p>
-								<a href="/more" rel="noopener noreferrer">
+								<a href="/about">
 									Read More{" "}
 								</a>
 							</div>
 							<div className="cart">
-								<img src={img3} width={100} height={100} alt="img1" />
+								<img
+									src={img3}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Medical care icon"
+								/>
 								<h2>Medical Care for Orphans</h2>
 								<p>
 									Provide orphaned children with healthcare, including
 									vaccinations, check-ups, and treatments to keep them healthy.
 								</p>
-								<a href="/more" rel="noopener noreferrer">
+								<a href="/about">
 									Read More{" "}
 								</a>
 							</div>

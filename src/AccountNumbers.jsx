@@ -1,11 +1,53 @@
 import "./accountNumbers.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { bankAccounts } from "./data/bankAccount";
 
 export default function AccountPopup({ onClose }) {
 	const [copiedId, setCopiedId] = useState(null);
 	const accounts = bankAccounts;
+	const popupRef = useRef(null);
+
+	useEffect(() => {
+		function handleKeyDown(event) {
+			if (event.key === "Escape") {
+				onClose();
+			}
+		}
+
+		window.addEventListener("keydown", handleKeyDown);
+		return () => window.removeEventListener("keydown", handleKeyDown);
+	}, [onClose]);
+
+	useEffect(() => {
+		const popupEl = popupRef.current;
+		if (!popupEl) return;
+
+		const focusable = popupEl.querySelectorAll(
+			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+		);
+		const first = focusable[0];
+		const last = focusable[focusable.length - 1];
+
+		if (first) {
+			first.focus();
+		}
+
+		function handleTrap(event) {
+			if (event.key !== "Tab" || focusable.length === 0) return;
+
+			if (event.shiftKey && document.activeElement === first) {
+				event.preventDefault();
+				last.focus();
+			} else if (!event.shiftKey && document.activeElement === last) {
+				event.preventDefault();
+				first.focus();
+			}
+		}
+
+		popupEl.addEventListener("keydown", handleTrap);
+		return () => popupEl.removeEventListener("keydown", handleTrap);
+	}, []);
 
 	const handleCopy = (text, id) => {
 		if (!text || text === "-") return;
@@ -17,8 +59,26 @@ export default function AccountPopup({ onClose }) {
 	};
 	return (
 		<div className="overlay">
-			<div className="popup">
-				<h2>Bank Account Numbers</h2>
+			<button
+				type="button"
+				className="overlay-close"
+				onClick={onClose}
+				onKeyDown={(event) => {
+					if (event.key === "Enter" || event.key === " ") {
+						event.preventDefault();
+						onClose();
+					}
+				}}
+				aria-label="Close dialog"
+			/>
+			<div
+				className="popup"
+				ref={popupRef}
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="account-numbers-title"
+			>
+				<h2 id="account-numbers-title">Bank Account Numbers</h2>
 				<button type="button" className="close-btn" onClick={onClose}>
 					<IoCloseSharp className="close" />
 				</button>

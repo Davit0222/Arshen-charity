@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 function BlogSection() {
 	useEffect(() => {
 		document.title = "Blog";
-	});
+	}, []);
 	const blog_data = [
 		{
 			type: "text",
@@ -60,7 +60,7 @@ function BlogSection() {
 							Narratives Unfolded: Discovering Stories, Gaining Insights, and
 							Staying Updated on Our Ever-Evolving Mission
 						</p>
-						<a href="/blogs" target="_blank" rel="noopener noreferrer">
+						<a href="/blog">
 							View all
 						</a>
 					</div>
@@ -71,7 +71,9 @@ function BlogSection() {
 									src={item.img}
 									width={445}
 									height={445}
-									alt={`item post: ${item.id}`}
+									loading="lazy"
+									decoding="async"
+									alt={`Blog post: ${item.quote}`}
 								/>
 								<h4 className="desc-title">{item.title}</h4>
 								<p className="section-title">{item.quote}</p>

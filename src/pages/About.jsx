@@ -5,7 +5,7 @@ import "./about.css";
 function About() {
 	useEffect(() => {
 		document.title = "About";
-	});
+	}, []);
 	return (
 		<>
 			<motion.div

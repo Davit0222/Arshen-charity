@@ -10,9 +10,6 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@react-google-maps/api": "^2.20.8",
-		"dotenv": "^17.2.3",
-		"google-map-react": "^2.2.5",
 		"motion": "^12.25.0",
 		"react": "^19.2.3",
 		"react-dom": "^19.2.3",

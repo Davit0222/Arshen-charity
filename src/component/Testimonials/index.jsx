@@ -55,7 +55,12 @@ function Testimonials() {
 								className={`testimonial-item ${oddClass}`}
 							>
 								<div className="testimonial-img">
-									<img src={item.img} alt={item.author} />
+									<img
+										src={item.img}
+										alt={item.author}
+										loading="lazy"
+										decoding="async"
+									/>
 								</div>
 								<div className="testimonial-text">
 									<p>{item.quote}</p>

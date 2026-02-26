@@ -23,7 +23,14 @@ function ComunitySection() {
 								hunger, crisis. I'm trying to make someone happy.
 							</p>
 							<div className="comunity-person">
-								<img src={img6} width={100} height={100} alt="img6" />
+								<img
+									src={img6}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Arayik Shahnazaryan"
+								/>
 								<div className="comunity-name">
 									<h3>Arayik Shahnazaryan</h3>
 									<p> President of The Organization</p>
@@ -38,7 +45,14 @@ function ComunitySection() {
 							</p>
 
 							<div className="comunity-person">
-								<img src={img4} width={100} height={100} alt="img4" />
+								<img
+									src={img4}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Jivan Nadaryan"
+								/>
 								<div className="comunity-name">
 									<h3>Jivan Nadaryan</h3>
 									<p> Secretary of The Organization</p>
@@ -56,7 +70,9 @@ function ComunitySection() {
 									width={100}
 									height={100}
 									id="comunity-img"
-									alt="img3"
+									loading="lazy"
+									decoding="async"
+									alt="Estella Saghian"
 								/>
 								<div className="comunity-name">
 									<h3>Estella Saghian</h3>
@@ -71,7 +87,14 @@ function ComunitySection() {
 							</p>
 
 							<div className="comunity-person">
-								<img src={img2} width={100} height={100} alt="img2" />
+								<img
+									src={img2}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Andre Tajaryan"
+								/>
 								<div className="comunity-name">
 									<h3>Andre Tajaryan</h3>
 									<p>Council Member</p>
@@ -85,7 +108,14 @@ function ComunitySection() {
 								Let's help make someone's life better
 							</p>
 							<div className="comunity-person">
-								<img src={img5} width={100} height={100} alt="img5" />
+								<img
+									src={img5}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Anita Zohrabyan"
+								/>
 								<div className="comunity-name">
 									<h3>Anita Zohrabyan</h3>
 									<p>Council Member</p>
@@ -99,7 +129,14 @@ function ComunitySection() {
 								need is you and me.
 							</p>
 							<div className="comunity-person">
-								<img src={img1} width={100} height={100} alt="img1" />
+								<img
+									src={img1}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Silva Abnoosian"
+								/>
 								<div className="comunity-name">
 									<h3>Silva Abnoosian</h3>
 									<p>Council Member</p>
@@ -114,7 +151,14 @@ function ComunitySection() {
 								future generations.
 							</p>
 							<div className="comunity-person">
-								<img src={img7} width={100} height={100} alt="img7" />
+								<img
+									src={img7}
+									width={100}
+									height={100}
+									loading="lazy"
+									decoding="async"
+									alt="Smbat Shahnazaryan"
+								/>
 								<div className="comunity-name">
 									<h3>Smbat Shahnazaryan</h3>
 									<p>Council Member</p>
@@ -132,7 +176,9 @@ function ComunitySection() {
 									src={img8}
 									width={100}
 									height={100}
-									alt="img8"
+									loading="lazy"
+									decoding="async"
+									alt="Poghos Mrjumyan"
 								/>
 								<div className="comunity-name">
 									<h3>Poghos Mrjumyan</h3>
