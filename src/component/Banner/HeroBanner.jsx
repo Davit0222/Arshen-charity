@@ -1,5 +1,5 @@
 import "./style.css";
-import imgHeader from "../../assets/hero2.jpg";
+import imgHeader from "../../assets/mainHero.jpeg";
 import Button from "../Button";
 import Container from "../Container";
 import { useState } from "react";
